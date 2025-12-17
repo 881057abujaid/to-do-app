@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.todo-container {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+.todo-container h1 {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 35px;
+}
+
+.todo-container h1 span {
+    color: rgb(6, 247, 231);
+}
+
+.input-section {
+    height: auto;
+    margin: 10px max(200px);
+    border: 1px solid black;
+    padding: 20px 100px;
+    border-radius: 12px;
+    background-color: black;
+    position: relative;
+}
+
+.input-section input {
+    padding: 10px;
+    font-size: 30px;
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+
+.input-section button {
+    height: 56px;
+    padding: 0 30px;
+    position: absolute;
+    top: 19px;
+    right:100px;
+    border-radius: 8px;
+    border: 2px solid black;
+    font-size: 20px;
+    background-color: rgb(6, 247, 231);
+    font-weight: bold;
+    transition: all 0.3s linear;
+}
+
+.input-section button:hover {
+    color: rgb(6, 247, 231);
+    background-color: white;
+}
+
+.filter-section {
+    margin: 10px 200px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.filter-section > button {
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    width: 150px;
+    background-color: rgb(6, 247, 231);
+    border: 2px solid black;
+    border-radius: 8px;
+    transition: all 0.3s linear;
+    margin: 0 10%;
+}
+
+.filter-section > button:hover,
+.filter-section > button:focus {
+    background-color: white;
+    color: rgb(6, 247, 231);
+}
+
+ul {
+    width: calc(100% - 400px);
+    height: auto;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin: 10px 200px;
+    padding: 10px 20px;
+    list-style: none;
+    background-color: black;
+}
+
+ul li {
+    width: 100%;
+    height: 60px;
+    border: 1px solid black;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    border-radius: 6px;
+    background-color: rgb(195, 255, 252);
+}
+
+ul li .task-text {
+    flex-basis: 80%;
+    font-size: 25px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.actions button {
+    margin-left: 8px;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 2px solid black;
+    background-color: rgb(6, 247, 231);
+    font-weight: bold;
+    transition: all 0.3s linear;
+}
+
+.actions button:hover {
+    background-color: white;
+    color: rgb(6, 247, 231);
+}
+
+p {
+    text-align: center;
+    color: grey;
+    display: none;
+    font-size: 30px;
+    font-style: italic;
+}
